@@ -24,10 +24,8 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 -Additional Feature: The user can tap on a movie's backdrop image to view the movies information (title, backdrop image, overview, and rating).
 
 ### App Walkthough GIF
-Portrait Walkthrough
 <img src="https://github.com/brandonschapiro/Flixster/blob/master/walkthrough-portrait.gif" width=250><br>
 
-Landscape Walkthrough
 <img src="https://github.com/brandonschapiro/Flixster/blob/master/walkthrough-landscape.gif" width=500><br>
 ### Notes
 Describe any challenges encountered while building the app.
