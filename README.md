@@ -16,8 +16,11 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] (2pts) Display a nice default [placeholder graphic](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
 - [x] (2pts) Improved the user interface by experimenting with styling and coloring.
 - [x] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
+
 -Note: Full backdrop image is displayed for movies rated higher than 7.5 stars instead of 5
+
 -Additional Feature: The user can tap on a movie's backdrop image to view the movies information (title, backdrop image, overview, and rating).
+
 ### App Walkthough GIF
 Portrait Walkthrough
 <img src="https://github.com/brandonschapiro/Flixster/blob/master/walkthrough-portrait.gif" width=250><br>
