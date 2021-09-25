@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String MOVIE_TITLE = "movie_title";
     public static final String MOVIE_OVERVIEW = "movie_overview";
-    public static final String MOVIE_URL = "movie_url";git s
+    public static final String MOVIE_URL = "movie_url";
     public static final String MOVIE_RATING = "movie_rating";
 
     @Override
