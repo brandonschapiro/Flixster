@@ -58,9 +58,9 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthough GIF
 
-<img src="https://github.com/brandonschapiro/Flixster/blob/master/walkthroughpart2-portrait.gif" width=250><br>
+<img src="https://github.com/brandonschapiro/Flixster/blob/master/walkthroughpart2-portrait.gif" width=249><br>
 
-<img src="https://github.com/brandonschapiro/Flixster/blob/master/walkthroughpart2-landscape.gif" width=500><br>
+<img src="https://github.com/brandonschapiro/Flixster/blob/master/walkthroughpart2-landscape.gif" width=498><br>
 
 ### Notes
 
