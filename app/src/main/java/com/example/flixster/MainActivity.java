@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String MOVIE_TITLE = "movie_title";
     public static final String MOVIE_OVERVIEW = "movie_overview";
-    public static final String MOVIE_URL = "movie_url";
+    public static final String MOVIE_URL = "movie_url";git s
     public static final String MOVIE_RATING = "movie_rating";
 
     @Override
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         RecyclerView rvMovies = findViewById(R.id.rvMovies);
         movies = new ArrayList<>();
-        //final MovieAdapter movieAdapter = new MovieAdapter(this, movies);
-        ComplexMovieAdapter.OnClickListener onClickListener = new ComplexMovieAdapter.OnClickListener() {
+        final MovieAdapter movieAdapter = new MovieAdapter(this, movies);
+        /*ComplexMovieAdapter.OnClickListener onClickListener = new ComplexMovieAdapter.OnClickListener() {
             @Override
             public void onItemClicked(int position) {
                 Intent intent = new Intent(MainActivity.this, MovieInfoActivity.class);
@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(MOVIE_RATING, movies.get(position).getRating());
                 startActivity(intent);
             }
-        };
+        };*/
 
-        final ComplexMovieAdapter complexMovieAdapter = new ComplexMovieAdapter(this, movies, onClickListener);
-        rvMovies.setAdapter(complexMovieAdapter);
+        //final ComplexMovieAdapter complexMovieAdapter = new ComplexMovieAdapter(this, movies, onClickListener);
+        rvMovies.setAdapter(movieAdapter);
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
 
         AsyncHttpClient client = new AsyncHttpClient();
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     JSONArray results = jsonObject.getJSONArray("results");
                     Log.i(TAG, "Results: " + results.toString());
                     movies.addAll(Movie.fromJsonArray(results));
-                    complexMovieAdapter.notifyDataSetChanged();
+                    movieAdapter.notifyDataSetChanged();
                     Log.i(TAG, "Movies: " + movies.size());
                 } catch (JSONException e) {
                     Log.d(TAG, "Hit json exception " + e);

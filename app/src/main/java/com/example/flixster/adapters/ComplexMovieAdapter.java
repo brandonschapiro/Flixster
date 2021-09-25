@@ -1,6 +1,6 @@
 package com.example.flixster.adapters;
 
-import static android.os.Build.VERSION_CODES.R;
+//import static android.os.Build.VERSION_CODES.R;
 
 import android.content.Context;
 import android.content.res.Configuration;
